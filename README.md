@@ -2,7 +2,7 @@
 
 
 ### Run
-- Label all the nodes, except the masters, as `collectl=true`: 
+- Label all the nodes you want to monitor (here, for example, all the nodes, except the masters) as `collectl=true`: 
 ```
 oc get node -o name -l node-role.kubernetes.io/master!= | xargs -I {}  oc label {} collectl=true 
 ```
