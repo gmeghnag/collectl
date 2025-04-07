@@ -6,7 +6,7 @@
 ```
 oc get node -o name -l node-role.kubernetes.io/master!= | xargs -I {}  oc label {} collectl=true 
 ```
-Create the `DaemonSet` resource:
+Create the `Namespace/collectl`, `ClusterRoleBinding/collectl-privileged`, and `DaemonSet/collectl` resources:
 ```
 oc apply -k https://github.com/gmeghnag/ocp-collectl.git
 ```
