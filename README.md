@@ -1,5 +1,4 @@
-# ocp-collectl
-
+# Execute `collectl` on RHOCP4
 
 ### Run
 - Label all the nodes you want to monitor (here, for example, all the nodes, except the masters) as `collectl=true`: 
