@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/ubi:latest
+FROM registry.access.redhat.com/ubi9/ubi:latest
 LABEL url=https://github.com/sharkcz/collectl/tree/9e4cd81389acac303b1bb120277b59b28d5ab188
 LABEL version=4.3.20
 COPY entrypoint.sh /opt/entrypoint.sh
