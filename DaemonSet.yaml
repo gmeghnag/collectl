@@ -22,7 +22,7 @@ spec:
         collectl: "true"
       containers:
       - name: collectl
-        image: quay.io/gmeghnag/collectl:4.3.20
+        image: quay.io/gmeghnag/collectl:4.3.20-ubi9
         imagePullPolicy: Always
         resources:
           limits:
