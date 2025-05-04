@@ -20,7 +20,7 @@ ls  collectl_out | while read GZ; do cat collectl_out/${GZ} | zcat > collectl_ou
 ```
 ### Analyze the data:
 ```
-podman run --rm -ti -v ${PWD}/collectl_out:/collectl_out quay.io/gmeghnag/collectl:4.3.20 sh
+podman run --rm -ti -v ${PWD}/collectl_out:/var/log/collectl quay.io/gmeghnag/collectl:4.3.20-ubi9 sh
 ```
 
 [1] https://collectl.sourceforge.net/Matrix.html
