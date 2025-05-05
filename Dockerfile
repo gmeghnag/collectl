@@ -2,7 +2,7 @@ FROM registry.access.redhat.com/ubi9/ubi:latest
 LABEL url=https://github.com/sharkcz/collectl/tree/9e4cd81389acac303b1bb120277b59b28d5ab188
 LABEL version=4.3.20
 COPY entrypoint.sh /opt/entrypoint.sh
-RUN yum -y install pciutils procps-ng hostname perl tar \
+RUN yum -y install man-db pciutils procps-ng hostname perl tar \
  && yum clean all \
  && curl -skLo /opt/collectl-4.3.20.tar.gz https://github.com/sharkcz/collectl/archive/refs/tags/4.3.20.tar.gz \
  && tar xvf /opt/collectl-4.3.20.tar.gz -C /opt \
