@@ -1,9 +1,6 @@
 # hadolint ignore=DL3007
 FROM registry.access.redhat.com/ubi10/ubi:latest AS builder
 
-# Architecture
-ARG ARCH=
-
 ARG COLLECTL_GIT="https://github.com/sharkcz/collectl.git"
 ARG COLLECTL_VER="4.3.20.1"
 # This comes from the INSTALL script https://github.com/sharkcz/collectl/blob/master/INSTALL
